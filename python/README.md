@@ -6,4 +6,5 @@
 
 G0 - Linear non-print move.
 G1 - Linear print move.
+G28 - Home axis.
 

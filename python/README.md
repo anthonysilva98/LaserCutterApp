@@ -1,4 +1,4 @@
-# Python backend handling for Gcode generation.
+# Python backend handling for G-code generation.
 
 ## Gcode
 

@@ -1,3 +1,6 @@
+from machine import Machine
+
+
 class Gcoderizer:
     """
     The `Gcoderizer` class handles the creation and formation of g-code commands.
@@ -15,6 +18,10 @@ class Gcoderizer:
         self.scale_x = self.plotter_dim_x / self.canvas_dim_x 
         self.scale_y = self.plotter_dim_y / self.canvas_dim_y
     
+    def load(self, name):
+        settings = Machine(name)._load_custom()
+        self.plotter_dim_x = settings["x_lim"]
+        self.plotter_dim_y = settings["y_lim"]
 
     def _in_canvas_bounds(x_points, y_points):
         """

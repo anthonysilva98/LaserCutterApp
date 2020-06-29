@@ -1,8 +1,9 @@
 import serial
 import time
+import pickle
 
 class Machine:
-    def __init__(self, machine_type, comm_port, baud_rate):
+    def __init__(self, machine_type):
         self.machine = None
         self.machine_type = machine_type  # "laser", "3d", "cnc", "custom".
         self.comm_port = comm_port
@@ -13,6 +14,21 @@ class Machine:
         self.y_limit = None
         self.z_limit = None
 
+    def _write_custom(self, machine_settings):
+        name = machine_settings["name"]
+        path_to_custom = F"python/Machines/{name}.pickle"
+        with open(path_to_custom, 'wb') as file:
+            pickle.dump(machine_settings, file)
+    
+    def _load_custom(self):
+        path_to_custom = F"python/Machines/{self.machine_type}.pickle"
+        try:
+            with open(path_to_custom, 'rb') as file:
+                custom_machines = pickle.load(file)
+            return custom_machines
+        except:
+            return False
+
     def connect(self):
         if self.machine_type == "3d":
             self.machine = serial.Serial(self.comm_port, self.baud_rate)
@@ -22,30 +38,10 @@ class Machine:
             pass
         elif self.machine_type == "cnc":
             pass
-        # elif self.machine_type in self.custom_machines:
-        #     pass
-    
+        elif self._load_custom(self.machine_type):
+            settings = self._load_custom(self.machine_type)
+            self.machine = serial.Serial(settings["port"], settings["baud"])
+   
     def send_command(self, command):
         if self.machine:
             self.machine.write(bytes(F"{command}\r\n", "UTF-8"))
-
-
-if __name__ == "__main__":
-    """Test `Machine` class on CR-10 3D printer."""
-    from gcode_ops import Gcoderizer
-    printer = Machine("3d", "/dev/ttyUSB0", 115200)
-    printer.x_limit = 300
-    printer.y_limit = 275
-    printer.z_limit = 400
-    printer.connect()
-
-    gcode = Gcoderizer()
-    gcode.canvas_dim_x = printer.x_limit
-    gcode.canvas_dim_y = printer.y_limit
-    gcode.plotter_dim_x = printer.x_limit
-    gcode.plotter_dim_y = printer.y_limit
-
-    printer.send_command(gcode.home())
-    printer.send_command(gcode.gen_line(0, 0, 100, 100))
-    
-

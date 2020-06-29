@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F12A68A24AA47C90082913D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12A68924AA47C90082913D /* AppDelegate.swift */; };
+		3F12A68C24AA47C90082913D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12A68B24AA47C90082913D /* SceneDelegate.swift */; };
+		3F12A68E24AA47C90082913D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12A68D24AA47C90082913D /* ContentView.swift */; };
+		3F12A69024AA47D60082913D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F12A68F24AA47D60082913D /* Assets.xcassets */; };
+		3F12A69324AA47D60082913D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F12A69224AA47D60082913D /* Preview Assets.xcassets */; };
+		3F12A69624AA47D60082913D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F12A69424AA47D60082913D /* LaunchScreen.storyboard */; };
+		3F12A6A124AA47D70082913D /* LazerCutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12A6A024AA47D70082913D /* LazerCutTests.swift */; };
+		3F12A6AC24AA47D70082913D /* LazerCutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12A6AB24AA47D70082913D /* LazerCutUITests.swift */; };
+		3F12A6BA24AA49590082913D /* MachineMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12A6B924AA49590082913D /* MachineMenu.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F12A69D24AA47D70082913D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F12A67E24AA47C90082913D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F12A68524AA47C90082913D;
+			remoteInfo = LazerCut;
+		};
+		3F12A6A824AA47D70082913D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F12A67E24AA47C90082913D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F12A68524AA47C90082913D;
+			remoteInfo = LazerCut;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F12A68624AA47C90082913D /* LazerCut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazerCut.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F12A68924AA47C90082913D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F12A68B24AA47C90082913D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3F12A68D24AA47C90082913D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3F12A68F24AA47D60082913D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F12A69224AA47D60082913D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F12A69524AA47D60082913D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F12A69724AA47D60082913D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F12A69C24AA47D70082913D /* LazerCutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazerCutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F12A6A024AA47D70082913D /* LazerCutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazerCutTests.swift; sourceTree = "<group>"; };
+		3F12A6A224AA47D70082913D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F12A6A724AA47D70082913D /* LazerCutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazerCutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F12A6AB24AA47D70082913D /* LazerCutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazerCutUITests.swift; sourceTree = "<group>"; };
+		3F12A6AD24AA47D70082913D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F12A6B924AA49590082913D /* MachineMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineMenu.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F12A68324AA47C90082913D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F12A69924AA47D70082913D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F12A6A424AA47D70082913D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F12A67D24AA47C90082913D = {
+			isa = PBXGroup;
+			children = (
+				3F12A68824AA47C90082913D /* LazerCut */,
+				3F12A69F24AA47D70082913D /* LazerCutTests */,
+				3F12A6AA24AA47D70082913D /* LazerCutUITests */,
+				3F12A68724AA47C90082913D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F12A68724AA47C90082913D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F12A68624AA47C90082913D /* LazerCut.app */,
+				3F12A69C24AA47D70082913D /* LazerCutTests.xctest */,
+				3F12A6A724AA47D70082913D /* LazerCutUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F12A68824AA47C90082913D /* LazerCut */ = {
+			isa = PBXGroup;
+			children = (
+				3F12A68924AA47C90082913D /* AppDelegate.swift */,
+				3F12A6B924AA49590082913D /* MachineMenu.swift */,
+				3F12A68B24AA47C90082913D /* SceneDelegate.swift */,
+				3F12A68D24AA47C90082913D /* ContentView.swift */,
+				3F12A68F24AA47D60082913D /* Assets.xcassets */,
+				3F12A69424AA47D60082913D /* LaunchScreen.storyboard */,
+				3F12A69724AA47D60082913D /* Info.plist */,
+				3F12A69124AA47D60082913D /* Preview Content */,
+			);
+			path = LazerCut;
+			sourceTree = "<group>";
+		};
+		3F12A69124AA47D60082913D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3F12A69224AA47D60082913D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3F12A69F24AA47D70082913D /* LazerCutTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F12A6A024AA47D70082913D /* LazerCutTests.swift */,
+				3F12A6A224AA47D70082913D /* Info.plist */,
+			);
+			path = LazerCutTests;
+			sourceTree = "<group>";
+		};
+		3F12A6AA24AA47D70082913D /* LazerCutUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F12A6AB24AA47D70082913D /* LazerCutUITests.swift */,
+				3F12A6AD24AA47D70082913D /* Info.plist */,
+			);
+			path = LazerCutUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F12A68524AA47C90082913D /* LazerCut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F12A6B024AA47D70082913D /* Build configuration list for PBXNativeTarget "LazerCut" */;
+			buildPhases = (
+				3F12A68224AA47C90082913D /* Sources */,
+				3F12A68324AA47C90082913D /* Frameworks */,
+				3F12A68424AA47C90082913D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LazerCut;
+			productName = LazerCut;
+			productReference = 3F12A68624AA47C90082913D /* LazerCut.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F12A69B24AA47D70082913D /* LazerCutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F12A6B324AA47D70082913D /* Build configuration list for PBXNativeTarget "LazerCutTests" */;
+			buildPhases = (
+				3F12A69824AA47D70082913D /* Sources */,
+				3F12A69924AA47D70082913D /* Frameworks */,
+				3F12A69A24AA47D70082913D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F12A69E24AA47D70082913D /* PBXTargetDependency */,
+			);
+			name = LazerCutTests;
+			productName = LazerCutTests;
+			productReference = 3F12A69C24AA47D70082913D /* LazerCutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F12A6A624AA47D70082913D /* LazerCutUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F12A6B624AA47D70082913D /* Build configuration list for PBXNativeTarget "LazerCutUITests" */;
+			buildPhases = (
+				3F12A6A324AA47D70082913D /* Sources */,
+				3F12A6A424AA47D70082913D /* Frameworks */,
+				3F12A6A524AA47D70082913D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F12A6A924AA47D70082913D /* PBXTargetDependency */,
+			);
+			name = LazerCutUITests;
+			productName = LazerCutUITests;
+			productReference = 3F12A6A724AA47D70082913D /* LazerCutUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F12A67E24AA47C90082913D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Anthony Silva";
+				TargetAttributes = {
+					3F12A68524AA47C90082913D = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					3F12A69B24AA47D70082913D = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 3F12A68524AA47C90082913D;
+					};
+					3F12A6A624AA47D70082913D = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 3F12A68524AA47C90082913D;
+					};
+				};
+			};
+			buildConfigurationList = 3F12A68124AA47C90082913D /* Build configuration list for PBXProject "LazerCut" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F12A67D24AA47C90082913D;
+			productRefGroup = 3F12A68724AA47C90082913D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F12A68524AA47C90082913D /* LazerCut */,
+				3F12A69B24AA47D70082913D /* LazerCutTests */,
+				3F12A6A624AA47D70082913D /* LazerCutUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F12A68424AA47C90082913D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F12A69624AA47D60082913D /* LaunchScreen.storyboard in Resources */,
+				3F12A69324AA47D60082913D /* Preview Assets.xcassets in Resources */,
+				3F12A69024AA47D60082913D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F12A69A24AA47D70082913D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F12A6A524AA47D70082913D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F12A68224AA47C90082913D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F12A68A24AA47C90082913D /* AppDelegate.swift in Sources */,
+				3F12A68C24AA47C90082913D /* SceneDelegate.swift in Sources */,
+				3F12A6BA24AA49590082913D /* MachineMenu.swift in Sources */,
+				3F12A68E24AA47C90082913D /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F12A69824AA47D70082913D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F12A6A124AA47D70082913D /* LazerCutTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F12A6A324AA47D70082913D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F12A6AC24AA47D70082913D /* LazerCutUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F12A69E24AA47D70082913D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F12A68524AA47C90082913D /* LazerCut */;
+			targetProxy = 3F12A69D24AA47D70082913D /* PBXContainerItemProxy */;
+		};
+		3F12A6A924AA47D70082913D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F12A68524AA47C90082913D /* LazerCut */;
+			targetProxy = 3F12A6A824AA47D70082913D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F12A69424AA47D60082913D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F12A69524AA47D60082913D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F12A6AE24AA47D70082913D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F12A6AF24AA47D70082913D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F12A6B124AA47D70082913D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"LazerCut/Preview Content\"";
+				DEVELOPMENT_TEAM = FJHZDGDUG3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = LazerCut/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CVM.LazerCut;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F12A6B224AA47D70082913D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"LazerCut/Preview Content\"";
+				DEVELOPMENT_TEAM = FJHZDGDUG3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = LazerCut/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CVM.LazerCut;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F12A6B424AA47D70082913D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJHZDGDUG3;
+				INFOPLIST_FILE = LazerCutTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CVM.LazerCutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LazerCut.app/LazerCut";
+			};
+			name = Debug;
+		};
+		3F12A6B524AA47D70082913D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJHZDGDUG3;
+				INFOPLIST_FILE = LazerCutTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CVM.LazerCutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LazerCut.app/LazerCut";
+			};
+			name = Release;
+		};
+		3F12A6B724AA47D70082913D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJHZDGDUG3;
+				INFOPLIST_FILE = LazerCutUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CVM.LazerCutUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LazerCut;
+			};
+			name = Debug;
+		};
+		3F12A6B824AA47D70082913D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJHZDGDUG3;
+				INFOPLIST_FILE = LazerCutUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CVM.LazerCutUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LazerCut;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F12A68124AA47C90082913D /* Build configuration list for PBXProject "LazerCut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F12A6AE24AA47D70082913D /* Debug */,
+				3F12A6AF24AA47D70082913D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F12A6B024AA47D70082913D /* Build configuration list for PBXNativeTarget "LazerCut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F12A6B124AA47D70082913D /* Debug */,
+				3F12A6B224AA47D70082913D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F12A6B324AA47D70082913D /* Build configuration list for PBXNativeTarget "LazerCutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F12A6B424AA47D70082913D /* Debug */,
+				3F12A6B524AA47D70082913D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F12A6B624AA47D70082913D /* Build configuration list for PBXNativeTarget "LazerCutUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F12A6B724AA47D70082913D /* Debug */,
+				3F12A6B824AA47D70082913D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F12A67E24AA47C90082913D /* Project object */;
+}

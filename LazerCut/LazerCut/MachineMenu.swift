@@ -7,19 +7,21 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct MachineMenu: View {
-    @State var MachineXstring = ""
-    @State var MachineYstring = ""
-    @State var MachineX = Int.self
-    @State var MachineY = Int.self
+    @State private var linedrag = CGSize.zero
+    @State private var startpoint = Int.self
     var body: some View {
-        ZStack{
-            Rectangle().edgesIgnoringSafeArea(.all).foregroundColor(.white)
+        NavigationView{
+            VStack{
+            Drawingboard(body: Never)
             
-        }
+            }
         
     }
+    }
+    
 }
 
 struct MachineMenu_Previews: PreviewProvider {
@@ -27,3 +29,4 @@ struct MachineMenu_Previews: PreviewProvider {
         MachineMenu()
     }
 }
+

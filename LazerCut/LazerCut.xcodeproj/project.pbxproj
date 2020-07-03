@@ -16,6 +16,7 @@
 		3F12A6A124AA47D70082913D /* LazerCutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12A6A024AA47D70082913D /* LazerCutTests.swift */; };
 		3F12A6AC24AA47D70082913D /* LazerCutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12A6AB24AA47D70082913D /* LazerCutUITests.swift */; };
 		3F12A6BA24AA49590082913D /* MachineMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12A6B924AA49590082913D /* MachineMenu.swift */; };
+		3F42E21D24ABF93700B7274E /* DrawingBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F42E21C24ABF93700B7274E /* DrawingBoard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3F12A6AB24AA47D70082913D /* LazerCutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazerCutUITests.swift; sourceTree = "<group>"; };
 		3F12A6AD24AA47D70082913D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F12A6B924AA49590082913D /* MachineMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineMenu.swift; sourceTree = "<group>"; };
+		3F42E21C24ABF93700B7274E /* DrawingBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				3F12A68924AA47C90082913D /* AppDelegate.swift */,
 				3F12A6B924AA49590082913D /* MachineMenu.swift */,
 				3F12A68B24AA47C90082913D /* SceneDelegate.swift */,
+				3F42E21C24ABF93700B7274E /* DrawingBoard.swift */,
 				3F12A68D24AA47C90082913D /* ContentView.swift */,
 				3F12A68F24AA47D60082913D /* Assets.xcassets */,
 				3F12A69424AA47D60082913D /* LaunchScreen.storyboard */,
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F42E21D24ABF93700B7274E /* DrawingBoard.swift in Sources */,
 				3F12A68A24AA47C90082913D /* AppDelegate.swift in Sources */,
 				3F12A68C24AA47C90082913D /* SceneDelegate.swift in Sources */,
 				3F12A6BA24AA49590082913D /* MachineMenu.swift in Sources */,
